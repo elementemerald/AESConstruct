@@ -10,12 +10,32 @@ namespace AESConstruct
     {
         private string selectedInputFile = "";
         private string selectedOutputFile = "";
-        private readonly string saltKey = "asdfasdfasdfasdf";
-        private readonly string saltIV = "fdsafdsafdsafdsa";
+        private string saltKey = "asdfasdfasdfasdf";
+        private string saltIV = "fdsafdsafdsafdsa";
 
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        public string GetSalt()
+        {
+            return saltKey;
+        }
+
+        public string GetIV()
+        {
+            return saltIV;
+        }
+
+        public void SetSalt(string saltKey)
+        {
+            this.saltKey = saltKey;
+        }
+
+        public void SetIV(string saltIV)
+        {
+            this.saltIV = saltIV;
         }
 
         private static string RandomString(int len)
@@ -149,6 +169,12 @@ namespace AESConstruct
         private void SKGenerateButton_Click(object sender, EventArgs e)
         {
             SecretKeyBox.Text = RandomString(32);
+        }
+
+        private void OptionsButton_Click(object sender, EventArgs e)
+        {
+            OptionsForm opts = new OptionsForm(this);
+            opts.ShowDialog(this);
         }
     }
 }

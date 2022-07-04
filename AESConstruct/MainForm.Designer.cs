@@ -41,6 +41,7 @@
             this.OutputFileLabel = new System.Windows.Forms.Label();
             this.OutputFileNameLabel = new System.Windows.Forms.Label();
             this.OutputFileSelectButton = new System.Windows.Forms.Button();
+            this.OptionsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AboutButton
@@ -171,11 +172,22 @@
             this.OutputFileSelectButton.UseVisualStyleBackColor = true;
             this.OutputFileSelectButton.Click += new System.EventHandler(this.OutputFileSelectButton_Click);
             // 
+            // OptionsButton
+            // 
+            this.OptionsButton.Location = new System.Drawing.Point(555, 457);
+            this.OptionsButton.Name = "OptionsButton";
+            this.OptionsButton.Size = new System.Drawing.Size(75, 23);
+            this.OptionsButton.TabIndex = 15;
+            this.OptionsButton.Text = "Options";
+            this.OptionsButton.UseVisualStyleBackColor = true;
+            this.OptionsButton.Click += new System.EventHandler(this.OptionsButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 492);
+            this.Controls.Add(this.OptionsButton);
             this.Controls.Add(this.OutputFileSelectButton);
             this.Controls.Add(this.OutputFileNameLabel);
             this.Controls.Add(this.OutputFileLabel);
@@ -212,5 +224,6 @@
         private Label OutputFileLabel;
         private Label OutputFileNameLabel;
         private Button OutputFileSelectButton;
+        private Button OptionsButton;
     }
 }
