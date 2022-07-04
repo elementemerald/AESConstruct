@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Title>AES Construct</Title>
+    <Company>ElementEmerald</Company>
+    <Product>AES Construct</Product>
+    <Copyright>Copyright (C) 2022 Ryan Omasta, licensed under the MIT License.</Copyright>
+    <Description>AES Construct</Description>
+    <PackageId>AESConstruct</PackageId>
+  </PropertyGroup>
+
+</Project>
